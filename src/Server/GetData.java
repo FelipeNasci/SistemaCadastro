@@ -4,12 +4,17 @@ import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.nio.file.Files;
 import javax.swing.JOptionPane;
+
+/*
+
+CLASSE PARA RESPOSTA DO MÉTODO POST
+
+*/
 
 public class GetData {
 
@@ -87,6 +92,7 @@ public class GetData {
 
     private void defineFile(String fileName) {
 
+        
         this.address = "src/view/" + fileName;          //  Define o endereco do arquivo
         this.file = new File(address);                  //  Procura o arquivo
         this.status = "200 OK";                         //  Arquivo encontrado | tudo ok

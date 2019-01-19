@@ -66,15 +66,19 @@ public class Page {
 
     private void defineFile(String fileName) {
 
-        this.address = "src/view/" + fileName;          //  Define o endereco do arquivo
+        File local = new File("");
+        //  Verifica onde a classe estah localizada
+        String path = local.getAbsoluteFile().toString().replace("\\src\\Server", "");
+
+        this.address = path + "/src/view" + fileName;   //  Define o endereco do arquivo
         this.file = new File(address);                  //  Procura o arquivo
         this.status = "200 OK";                         //  Arquivo encontrado | tudo ok
 
-        if (!file.exists()) {                           //  Se o arquivo nao existe
-            this.address = "src/" + "Site/erro.html";   //  Localiza pg de erro 
-            this.file = new File(address);              //  Identifica o arquivo de erro
-            this.status = "404 Not Found";              //  Bad request
-            JOptionPane.showMessageDialog(null, fileName + "NÃO EXISTE");
+        if (!file.exists()) {                               //  Se o arquivo nao existe
+            this.address = path + "src/view/erro.html";     //  Localiza pg de erro 
+            this.file = new File(address);                  //  Identifica o arquivo de erro
+            this.status = "404 Not Found";                  //  Bad request
+            //JOptionPane.showMessageDialog(null, fileName + "NÃO EXISTE");
         }
     }
 }

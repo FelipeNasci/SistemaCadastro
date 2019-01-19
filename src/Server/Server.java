@@ -1,5 +1,6 @@
 package Server;
 
+import java.io.File;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
@@ -19,6 +20,10 @@ public class Server extends JFrame {
         try {
 
             gui();
+            
+            File caminho = new File(".");
+            
+            System.err.println("Caminho = " + caminho.getAbsolutePath());
             
             server = new ServerSocket(port);
             pool = Executors.newCachedThreadPool();

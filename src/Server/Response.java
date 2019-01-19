@@ -34,7 +34,6 @@ public class Response implements Runnable {
                     new Page(client, fileName, protocol).response();
                     break;
                 case "POST":
-
                     new GetData(client, fileName, protocol).data();
                     break;
 
