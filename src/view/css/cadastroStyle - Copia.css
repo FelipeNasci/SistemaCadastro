@@ -1,0 +1,77 @@
+body{
+	width: 960px;
+	height: 1100px;
+	
+	margin: auto;
+	background: #CCE4FF;
+	
+	font-family: sans-serif;
+	
+}
+
+form{
+	width: 80%;
+	height: 90%;
+	margin: auto;
+	background: #FFFFFF;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+#numPlano{
+	text-align: right;
+	width: 90%;
+}
+
+legend, label{
+	font-size: 18px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+input, select{
+	font-size: 15px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	
+	letter-spacing: 2px;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+
+fieldset{
+	
+	line-height: 40px;		/* Espaçamento entre as linhas */
+	word-spacing: 10px;		/* Espaçamento entre palavras / objetos */
+	letter-spacing: 2px;	/* Espaçamento entre letras */
+	
+	border-radius: 5px;		/* Bordas arredondadas*/
+	border-color: #CCE4FF;	
+}
+
+#doc1{
+	column-count: 3;
+}
+
+#doc2, #doc3, #ass{
+	column-count: 2;
+}
+
+#contratante, #contratado{
+	line-height: 0px;
+	text-align: center;
+}
+
+#contratado.input{
+	text-align: center;
+}
+
+#corpo{
+	padding: 20px;
+}
+
+header{
+	text-align: center;
+	line-height: 40px;
+}
+
+

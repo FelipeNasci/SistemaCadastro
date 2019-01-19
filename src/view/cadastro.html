@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro</title>
+	
+		<link rel="stylesheet" type="text/css" href="css/cadastroStyle.css">
+		<script type="text/javascript" src="js/cadastroScript.js"></script>
+
+		<meta charset="utf-8">
+		<meta author="Diego Felipe">
+
+</head>
+<body>
+
+	<div id="corpo">
+		
+		<header>
+		
+			
+		<h3>FICHA DE INSCRIÇÃO</h3> 
+		</header>
+
+	<main>
+		
+		
+
+		<div id="numPlano">
+			<h6> PLANO Nº </h6> <br>
+		</div>
+
+		<form action="ok.html" method="post">
+
+
+			<fieldset id="nome"> <legend> <label for="cName">Nome</label> </legend>
+
+				<input type="text" name="tName" id="cName" placeholder="Nome completo" size="80" maxlength="100" >
+
+			</fieldset>
+
+			<fieldset id="endereco"> <legend><label for="cEndereco">Endereço</label></legend>
+
+				<!-- Rua -->
+				<input type="text" name="tEndereco" id="cEndereco" placeholder="Rua, Avenida, Trav." size="70" >
+
+				<!-- Numero -->
+				<input type="number" name="tNumber" id="cNumber" placeholder="Número" min="0" max="9999" > <br>
+
+				<!-- Ponto de referencia -->
+				<input type="text" name="tReferencia" id="cReferencia" placeholder="Ponto de referência" size="50" > <br>
+
+				<!-- Bairro -->
+				<input type="text" name="tBairro" id="cBairro" placeholder="Bairro" size="20" > 
+
+				<!-- Cidade -->
+				<input type="text" name="tCidade" id="cCidade" placeholder="Cidade" size="20" >
+
+				<!-- Estado -->
+				<input type="text" name="tEstado" id="cEstado" placeholder="Estado" size="20" >
+
+			</fieldset>
+
+			<div id="doc1">
+
+				<fieldset id="rg"> <legend> <label for="cRg">R.G</label> </legend>
+
+					<!-- RG -->
+					<input type="text" name="tRg" id="cRg" placeholder="R.G" size="10" >
+
+				</fieldset>
+
+				<fieldset id="cpf"> <legend> <label for="cCpf">CPF</label> </legend>
+
+					<!-- CPF -->
+					<input type="text" name="tCpf" id="cCpf" placeholder="CPF" size="11" maxlength="11" >
+
+				</fieldset>
+
+				<fieldset id="estadoCivil"> <legend>Estado Civil</legend>
+
+					<!-- estado civil -->
+					<select id="cEstadoCivil" name="tEstadoCivil">
+
+						<option> Casado(a) </option>
+						<option> Solteiro(a) </option>
+						<option> Viúvo(a) </option>
+
+					</select>
+
+				</fieldset>
+
+			</div>
+
+			<div id="doc2">
+
+				<fieldset id="telefone"> <legend><label for="cTelefone">Telefone</label></legend>
+
+				<!-- telefone -->
+				<input type="text" name="tTelefone" id="cTelefone" placeholder="Telefone para contato" size="20" >
+
+				</fieldset>
+
+				<fieldset id="dataNascimento"> <legend>Data de Nascimento</legend>
+
+					<!-- Data de Nascimento -->
+					<input type="date" name="tDataNascimento" id="cDataNascimento" >
+
+				</fieldset>
+
+			</div>
+
+			<div id="doc3">
+
+
+				<fieldset id="profissao"> <legend> <label for="cProfissao">Profissão</label> </legend>
+
+					<!-- Profissão -->
+					<input type="text" name="tProfissao" id="cProfissao" size="40">
+
+				</fieldset>
+
+				<fieldset id="casaPropria"> <legend> Casa Própria </legend>
+
+					<!-- Casa Própria - sim -->
+					<input type="radio" name="tCasaPropria" id="cCasaPropriaSim" checked> <label for="cCasaPropriaSim">Sim</label>
+
+					<!-- Casa Própria - nao -->
+					<input type="radio" name="tCasaPropria" id="cCasaPropriaNao"> <label for="cCasaPropriaNao">Não</label>
+
+				</fieldset>
+			</div>
+
+			<fieldset id="localData"> <legend> Local e Data </legend>
+				
+				<input type="text" name="tLocalCidade" id="cLocalCidade" size="40">
+				<input type="text" name="tLocalEstado" id="cLocalEstado" size="2" maxlength="2">
+				<input type="date" name="tDate" id="cData">
+
+			</fieldset>
+
+			<fieldset id="assinatura"> <legend>Assinatura</legend>
+
+				<div id="ass">
+				
+					<div id="contratante">
+						<input type="text" name="tContratante" id="cContratante" size="40"> 
+						<p>Contratante</p>
+					</div>
+
+					<div id="contratado">
+						<input type="text" name="tContratado" id="cContratado" size="40" value="Proprietário"> 
+						<p>Contratado</p>
+					</div>
+
+				</div>
+				
+				<div>
+				<input type="submit" >
+				</div>
+				
+			</fieldset>
+
+
+		</form>
+
+	</main></div>
+
+</body>
+</html>
